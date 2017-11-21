@@ -48,8 +48,13 @@ RUN mkdir /usr/local/blender && \
 #     gcloud --version
 # VOLUME ["/root/.config"]
 
+# RUN echo "GOOGLE_APPLICATION_CREDENTIALS=/app/CloudComputing-b0b74e9cd1da.json" >> ~/.bashrc
+# RUN echo "export GOOGLE_APPLICATION_CREDENTIALS" >> ~/.bashrc
+
+# RUN echo $GOOGLE_APPLICATION_CREDENTIALS
+
 # build our go app
-FROM golang:1.7
+#FROM golang:1.7
 
 #RUN go get -u cloud.google.com/go/storage
 

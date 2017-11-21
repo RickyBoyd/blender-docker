@@ -26,6 +26,8 @@ import (
 
 func main() {
 	//projectID := os.Getenv("GOOGLE_CLOUD_PROJECT")
+	x := os.Getenv("GOOGLE_APPLICATION_CREDENTIALS")
+	fmt.Fprintf(os.Stderr, "x:"+x+"\n")
 	projectID := "steam-key-186012"
 	if projectID == "" {
 		fmt.Fprintf(os.Stderr, "GOOGLE_CLOUD_PROJECT environment variable must be set.\n")
